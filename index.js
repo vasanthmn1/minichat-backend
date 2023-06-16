@@ -13,7 +13,7 @@ const app = express()
 
 
 const server = http.createServer(app);
-const io = socketio(server, { cors: "*" })
+const io = socketio(server, { cors: "https://clever-chaja-38768f.netlify.app" })
 DB()
 app.use(cors())
 app.use(cors(
@@ -23,7 +23,7 @@ app.use(cors(
 ))
 
 app.get('/', (req, res) => {
-    res.json("Api is working");
+    res.json("chat  Api");
     console.log("Hello");
 })
 
