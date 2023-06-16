@@ -13,7 +13,7 @@ const app = express()
 
 
 const server = http.createServer(app);
-const io = socketio(server, { cors: "https://clever-chaja-38768f.netlify.app" })
+const io = socketio(server, { cors: "*" })
 DB()
 app.use(cors())
 app.use(cors(
